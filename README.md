@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Prueba técnica desarrollo Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Creado por: Angel Gasca
 
-Currently, two official plugins are available:
+## Objetivos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+[x] Desarrollar una clase con un método que entregue el término n de la serie:
+```math
+serie(n) = fibonacci(n) - 2*númeroTriangular(n) + primo(n)
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- Desarrollar 3 componentes de React:
+
+  [x] Un componente visual que muestra un formulario para introducir el número n
+
+  [x] Un componente no-visual donde se calcule el término n de la serie
+
+  [x] Un componente visual que muestra el resultado del cálculo
+
+[x] Realizar pruebas unitarias usando los 10 números naturales como entrada
+
+## Tecnologías usadas
+
+- React y TypeScript
+- Mocha y Chai (para testing)
+
+## Librerías extras
+
+- [react-countup](https://www.npmjs.com/package/react-countup) (contador visual)
+- [react-toastify](https://www.npmjs.com/package/react-toastify) (notificaciones)
