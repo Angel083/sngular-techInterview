@@ -5,20 +5,16 @@ import ResultView from "./components/ResultView";
 import CalculateSerie from "./components/CalculateSerie";
 
 function App() {
-  const mostraDataConsola = (data: any) => {
-    setInputNumber(data);
-  };
-
-  const [inputNumber, setInputNumber] = useState(0);
+  const [currentInputNumber, setCurrentInputNumber] = useState(0);
   const [result, setResult] = useState(0);
   useEffect(() => {
-    setResult(CalculateSerie(Number(inputNumber)));
-  }, [inputNumber]);
+    setResult(CalculateSerie(currentInputNumber));
+  }, [currentInputNumber]);
 
   return (
     <>
-      <FormInput enviarDataPadre={mostraDataConsola} />
-      <ResultView finalResult={result} inputNumber={inputNumber} />
+      <FormInput setCurrentInputNumber={setCurrentInputNumber} />
+      <ResultView finalResult={result} inputNumber={currentInputNumber} />
     </>
   );
 }
