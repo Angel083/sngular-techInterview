@@ -1,13 +1,4 @@
 class NSerie {
-  constructor() {}
-
-  public serieN(nNumber: number): number {
-    return (
-      this.fibonacciN(nNumber) -
-      2 * this.numeroTriangularN(nNumber) +
-      this.primoN(nNumber)
-    );
-  }
 
   public numeroTriangularN(nNumber: number): number {
     return (nNumber * (nNumber + 1)) / 2;

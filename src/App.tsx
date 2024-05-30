@@ -1,16 +1,24 @@
 import { useEffect, useState } from "react";
-import NSerie from "./class/NSerie";
+
+import FormInput from "./components/FormInput";
+import ResultView from "./components/ResultView";
+import CalculateSerie from "./components/CalculateSerie";
 
 function App() {
-  const [nSerie, setnSerie] = useState(0);
+  const mostraDataConsola = (data: any) => {
+    setInputNumber(data);
+  };
+
+  const [inputNumber, setInputNumber] = useState(0);
+  const [result, setResult] = useState(0);
   useEffect(() => {
-    const result = new NSerie();
-    setnSerie(result.serieN(6));
-  }, []);
+    setResult(CalculateSerie(Number(inputNumber)));
+  }, [inputNumber]);
+
   return (
     <>
-      <h1>Hola mundo!</h1>
-      {nSerie}
+      <FormInput enviarDataPadre={mostraDataConsola} />
+      <ResultView finalResult={result} inputNumber={inputNumber} />
     </>
   );
 }

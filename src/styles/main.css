@@ -1,12 +1,86 @@
 :root {
-  --font-color-primary : white;
+  --font-color-white: hsl(0, 0%, 100%);
+  --font-color-dark: hsl(0, 0%, 0%);
+  --bg-color-white: white;
+  /* --bg-color-white : white; */
 }
 
 body {
-  background: #141E30;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #141e30; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #243b55, #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #243b55, #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   font-family: Arial, sans-serif;
-  color: var(--font-color-primary);
+  color: var(--font-color-white);
+}
+.dark {
+  color: var(--font-color-dark);
+}
+.nSerie__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.nSerie__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 5px solid var(--bg-color-white);
+  padding: 25px 50px;
+  border-radius: 20px;
+  margin-top: 50px;
+  max-width: 1200px;
+  border-radius: 50px;
+}
+
+.nSerie__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nSerie__result {
+  margin-top: 1rem;
+}
+.nSerie__result span {
+  font-size: 1.25rem;
+}
+
+input[type="text"] {
+  padding: 6px 15px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 2px solid transparent;
+  transition: 300ms ease;
+  outline: none;
+}
+input[type="text"]:focus-visible {
+  border: 2px solid var(--font-color-dark);
+}
+input[type="text"]:hover {
+  transform: scale(1.05);
+}
+button {
+  min-width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  transition: 200ms ease-in;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #141e30;
+  color: var(--font-color-white);
+  border: 2px solid var(--font-color-white);
 }
