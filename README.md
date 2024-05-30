@@ -4,20 +4,20 @@ Creado por: Angel Gasca
 
 ## Objetivos
 
-[x] Desarrollar una clase con un método que entregue el término n de la serie:
+- [x] Desarrollar una clase con un método que entregue el término n de la serie:
 ```math
 serie(n) = fibonacci(n) - 2*númeroTriangular(n) + primo(n)
 ```
 
 - Desarrollar 3 componentes de React:
 
-  [x] Un componente visual que muestra un formulario para introducir el número n
+  - [x] Un componente visual que muestra un formulario para introducir el número n
 
-  [x] Un componente no-visual donde se calcule el término n de la serie
+  - [x] Un componente no-visual donde se calcule el término n de la serie
 
-  [x] Un componente visual que muestra el resultado del cálculo
+  - [x] Un componente visual que muestra el resultado del cálculo
 
-[x] Realizar pruebas unitarias usando los 10 números naturales como entrada
+- [x] Realizar pruebas unitarias usando los 10 números naturales como entrada
 
 ## Tecnologías usadas
 
